@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Deploying App</title>
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<h1>How to Deploy an App to Github</h1>
+		<ol>
+			<li class="list-item">Create a new repository on Github</li>
+			<li class="list-item">Using the command line, initiate git: <span class="span">git init</span></li>
+			<li class="list-item">
+				<b>Optional</b>: Create a README file: <span class="span">git add README.md</span>
+			</li>
+			<li class="list-item">Add the files of the repository: <span class="span">git add .</span></li>
+			<li class="list-item">
+				Commit the files of the repository:
+				<span class="span">git commit -m "<span class="span-2">{comment}</span>"</span>
+			</li>
+			<li class="list-item">
+				Set up and push the repository via the command line using the commands provided from Github when the
+				repository was initially created:
+				<ul>
+					<li class="list-item-2"><span class="span">git branch -M main</span></li>
+					<li class="list-item-2">
+						<span class="span"
+							>git remote add origin https://github.com/<span class="span-2">{gitname}</span
+							>/deploying-react-app.git</span
+						>
+					</li>
+					<li class="list-item-2"><span class="span">git push -u origin main</span></li>
+				</ul>
+			</li>
+		</ol>
+	</body>
+</html>
